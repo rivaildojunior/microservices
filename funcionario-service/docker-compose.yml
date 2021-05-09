@@ -1,0 +1,36 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:13.2-alpine
+    container_name: db-postgres
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=postgres
+      - POSTGRES_DB=dbfuncionario
+    ports:
+      - 5432:5432
+    volumes:
+      - /data/postgres
+    networks:
+      - folha-net
+  web:
+    image: funcionario:v1
+    container_name: container-funcionario
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    depends_on:
+      - postgres
+    ports:
+      - 8080:8080 
+    networks:
+      - folha-net
+networks:
+  folha-net:
+    driver: bridge    
+      
+#docker run --name redis -p 6379:6379 redis
+
+#docker exec -it db-postgres psql -d db-appcache -U postgres
+    
+    
