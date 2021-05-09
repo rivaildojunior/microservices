@@ -1,3 +1,5 @@
+![arquitetura](https://user-images.githubusercontent.com/59898958/117580068-60df5c80-b0cc-11eb-8b16-8e8155bd3ce4.png)
+
 ## Instruções
 
 ### Criar rede docker:
