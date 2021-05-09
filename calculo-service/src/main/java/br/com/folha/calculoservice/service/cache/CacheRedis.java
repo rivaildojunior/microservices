@@ -32,13 +32,3 @@ public class CacheRedis implements Cache<Funcionario> {
 	}
 
 }
-
-//docker exec -it redis1 redis-cli
-//zookeeper-server-start.bat C:\kafka_2.12-2.5.0\config\zookeeper.properties
-//
-//kafka-server-start.bat C:\kafka_2.12-2.5.0\config\server.properties
-//
-//
-//kafka-console-producer.bat --broker-list localhost:9092 --topic pagamento
-//
-//kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic pagamento --from-beginning
