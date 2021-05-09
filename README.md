@@ -14,7 +14,7 @@ docker network create folha-net
 
 ```
 docker run -p 5432:5432 --name db-postgres --network folha-net -e POSTGRES_PASSWORD=root -e POSTGRES_DB=dbfuncionario postgres:12-alpine
-docker run --name pgadmin --network folha-net -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=rivaildo@yahoo.com.br" -e "PGADMIN_DEFAULT_PASSWORD=123456" -d dpage/pgadmin4
+docker run --name pgadmin --network folha-net -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=seuemail@email.com.br" -e "PGADMIN_DEFAULT_PASSWORD=123456" -d dpage/pgadmin4
 ```
 
 ### Criando imagem Redis no Docker:
